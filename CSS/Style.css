@@ -117,6 +117,7 @@ p {
 
 .block-arrow {
     display: flex;
+    max-height: 14px;
 }
 .block-point {
     display: flex;
@@ -163,20 +164,10 @@ p {
 .arrow-back {
     cursor: pointer;
 }
-.image-slider__image img {
+.image-slider__image {
     max-width: 100%;
 }
-.swiper-pagination-bullet-active {
-    background-color: #fff !important;
-}
 
-.swiper-pagination-bullet {
-    background-color: #FFFFFF !important;
-    width: 14px !important;
-    height: 14px !important;
-    line-height: 20px !important;
-    
-}
 .swiper-container{
     overflow: hidden;
 }
@@ -210,3 +201,42 @@ p {
     border-left: none;
     border-right: none;
 }
+.slider__images .image {
+    background-size: cover;
+    background-position: center center;
+    width: 679px;
+    height: 442px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity 800ms ease;
+}
+.slider__images .image.active {
+    opacity: 1;
+}
+.slider {
+    position: relative;
+}
+.slider__dots {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    width: 100%;
+  }
+  
+  .slider__dots-item {
+    width: 10px;
+    height: 10px;
+    background: rgb(100%, 100%, 100%, 30%);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background 0.4s ease;
+  }
+  
+  .slider__dots-item:hover, .slider__dots-item.active {
+    background: #fff;
+  }
