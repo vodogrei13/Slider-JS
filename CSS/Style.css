@@ -221,9 +221,10 @@ p {
 .slider__dots {
     display: flex;
     justify-content: center;
-    position: absolute;
+    gap: 17.54px;
     left: 0;
     bottom: -20px;
+    padding-top: 1.46px;
     width: 100%;
   }
   
@@ -232,7 +233,7 @@ p {
     height: 10px;
     background: rgb(100%, 100%, 100%, 30%);
     border-radius: 50%;
-    margin: 0 5px;
+    margin: 0 ;
     cursor: pointer;
     transition: background 0.4s ease;
   }
