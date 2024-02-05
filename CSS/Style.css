@@ -11,15 +11,18 @@ main {
     display: flex;
     gap: 50px;
 }
-h3 {
+
+h3, a {
     color: #E3B873;
     font-family: "Yeseva one";
     text-transform: uppercase;
     margin: 0;
 }
+
 p {
     color: #FFFFFF;
     font-family: "Nunito Sans";
+    font-weight: 400;
 }
 
 .block_one {
@@ -146,7 +149,18 @@ p {
     line-height: 138.6%;
     white-space: nowrap;
     font-size: 14px;
+    color: rgb(100%, 100%, 100%, 30%);
+    padding-bottom: 0;
+    border: none;
+    text-decoration: none;
 }
+.address_active {
+    color: #E3B873;
+    border-bottom: 1px solid #E3B873;
+    padding-bottom: 6.68px;
+    margin: 0;
+    transform: none;
+}  
 
 .Adress-swiper-slide_one {
     max-width: 194px;
@@ -175,24 +189,7 @@ p {
     display: flex;
     gap: 17.54px;
 }
-
-.address_one_active,
-.address_two_active,
-.address_three_active {
-    color: #E3B873 !important;
-    border-bottom: 1px solid #E3B873 !important;
-    padding-bottom: 6.68px !important;
-    margin: 0;
-    transform: none;
-}
-
-.address_one_none,
-.address_two_none,
-.address_three_none {
-    color: rgb(100%, 100%, 100%, 30%) !important;
-    border: none !important;
-    padding-bottom: 0 !important; 
-}
+    
 .line {
     border-bottom: 2px solid #E3B873;
     margin: 0;
